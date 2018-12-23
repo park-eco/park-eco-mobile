@@ -32,15 +32,14 @@
 		45F07B91A98A4E61883D626A /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47CC0DB0F96C4C4693F794BB /* Roboto_medium.ttf */; };
 		46F2B89C671844A08F867961 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEDF188DFDD54A27A6B202F3 /* MaterialIcons.ttf */; };
 		48D5F4F41C2149F092DDB624 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 510E38B95118432396A51CBD /* FontAwesome.ttf */; };
-		578943DA21AC1E0B0041EBB5 /* libPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 578943D921AC1E0B0041EBB5 /* libPicker.a */; };
 		57F1ECFA21AA9036007EFBD6 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F1ECF921AA9036007EFBD6 /* libRNSVG.a */; };
 		5FC84E8D2EBA42A5ABF2AB80 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 517BAA0B6DCD482D9B67C732 /* Roboto.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		875DC5879E13431D80402415 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E42D34EFB44D5A3EDB141 /* Zocial.ttf */; };
+		99F3C924D39161207E605A91 /* libPods-ParkEco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E2192E3DF4B89C32253A3C /* libPods-ParkEco.a */; };
 		A41B14CC5DCF4AF6858BAF31 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3D02E684C7943A2877441CD /* Octicons.ttf */; };
 		A4CD9B2B1DF342F2B211705E /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DDB4E3B7268473EB60756BF /* Feather.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B536061380732B104EA692C1 /* libPods-ParkEco.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E530BB5F377E98A811680A17 /* libPods-ParkEco.a */; };
 		CE0395BE8DEA4AC5AA8C8DC7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA54248160964B8EBB4F47F8 /* MaterialCommunityIcons.ttf */; };
 /* End PBXBuildFile section */
 
@@ -382,7 +381,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578943DA21AC1E0B0041EBB5 /* libPicker.a in Frameworks */,
 				57F1ECFA21AA9036007EFBD6 /* libRNSVG.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -397,7 +395,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				00B1947C952B45CF935C0FD5 /* libRCTRestart.a in Frameworks */,
-				B536061380732B104EA692C1 /* libPods-ParkEco.a in Frameworks */,
+				99F3C924D39161207E605A91 /* libPods-ParkEco.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,33 +25,6 @@ const datas = [
     type: "FontAwesome",
     bg: "#C5F442"
   },
-  {
-    name: "HumanResource",
-    route: "HumanResource",
-    icon: "human-greeting",
-    type: "MaterialCommunityIcons",
-    bg: "#C5F442"
-  },
-  {
-    name: "TheParking",
-    route: "TheParking",
-    icon: "parking",
-    type: "MaterialCommunityIcons",
-    bg: "#C5F442"
-  },
-  // {
-  //   name: "Revenue",
-  //   route: "Revenue",
-  //   icon: "phone-portrait",
-  //   bg: "#C5F442"
-  // },
-  {
-    name: "Report",
-    route: "Report",
-    icon: "chart-areaspline",
-    type: "MaterialCommunityIcons",
-    bg: "#C5F442"
-  },
 ];
 
 class SideBar extends Component {
