@@ -13,18 +13,45 @@ import {
 } from "native-base";
 import { COLOR } from 'react-native-material-ui';
 import { getAttendant } from './../../actions/parkingLotAttendant'
+import { StackActions, NavigationActions } from 'react-navigation';
+
 import styles from "./style";
 
 const drawerCover = require("../../../assets/background-login1.jpg");
 const drawerImage = require("../../../assets/icon-Parking-Systems.jpg");
 const datas = [
   {
-    name: "LiveTracking",
+    name: "Live Tracking",
     route: "LiveTracking",
     icon: "map-marker",
     type: "FontAwesome",
-    bg: "#C5F442"
+    bg: "#C5F442",
+    enable: true
   },
+  {
+    name: "Transaction History",
+    route: "TransactionHistory",
+    icon: "history",
+    type: "FontAwesome",
+    bg: "#C5F442",
+    enable: false
+  },
+  {
+    name: "My Wallet",
+    route: "MyWallet",
+    icon: "google-wallet",
+    type: "FontAwesome",
+    bg: "#C5F442",
+    enable: false
+  },
+  {
+    name: "Current Parking",
+    route: "CurrentParking",
+    icon: "local-parking",
+    type: "MaterialIcons",
+    bg: "#C5F442",
+    enable: false
+  }
 ];
 
 class SideBar extends Component {
@@ -36,12 +63,17 @@ class SideBar extends Component {
   }
 
   _logout = () => {
-    this.props.navigation.navigate('Login');
+    // navigate and remove from stack
+    const resetAction = StackActions.reset({
+      index: 0,
+      actions: [NavigationActions.navigate({ routeName: 'Login' })],
+    });
+    this.props.navigation.dispatch(resetAction);
   }
 
   componentDidMount() {
     const username = this.props.navigation.getParam('username', 'null');
-    
+
     getAttendant(username).then((response) => {
       this.setState({ user: response[0] });
     });
@@ -63,7 +95,11 @@ class SideBar extends Component {
               <ListItem
                 button
                 noBorder
-                onPress={() => this.props.navigation.navigate(data.route)}
+                onPress={() => {
+                  if (data.enable) {
+                    this.props.navigation.navigate(data.route)
+                  }
+                }}
               >
                 <Left>
                   <Icon
