@@ -11,8 +11,8 @@ import ServerInput from "./serverInput";
 import ForgotPassword from "./forgotPassword";
 import { logIn } from './../../actions/authenticationAction'
 
-const background = require("../../../assets/background-login1.jpg");
-const logo = require("../../../assets/icon-Parking-Systems.jpg");
+const background = require("../../../assets/background.png");
+const logo = require("../../../assets/icon-Parking-Application.png");
 
 class Login extends Component {
 	constructor() {

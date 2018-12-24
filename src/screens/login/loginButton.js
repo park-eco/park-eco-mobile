@@ -40,7 +40,7 @@ class LoginButton extends Component {
 	render() {
 		return (
 			<Btn
-				foregroundColor="orange"
+				foregroundColor="#3498db"
 				successBackgroundColor="#4cd964"
 				errorBackgroundColor="#ff3b30"
 				labelStyle={{ fontWeight: "bold" }}

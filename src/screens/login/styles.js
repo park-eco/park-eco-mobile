@@ -1,7 +1,7 @@
 export default {
   container: {
     flex: 1,
-    backgroundColor: "#eee",
+    backgroundColor: "#fff",
   },
   containerBackground: {
     position: "absolute",
@@ -27,7 +27,7 @@ export default {
     marginVertical: 10
   },
   labelAppName: {
-    color: "white",
+    color: "#3498db",
     fontFamily: "Verdana-Bold",
     fontSize: 36,
     fontWeight: "bold",
@@ -37,13 +37,15 @@ export default {
     alignSelf: 'center',
     height: 150,
     width: 150,
-    borderWidth: 1,
-    borderRadius: 75,
+    borderRadius: 5,
   },
   statusServer: {
-    color: "white", 
-    marginLeft: 10, 
-    fontStyle: "italic"
+    color: "#fff",
+    marginLeft: 10,
+    fontStyle: "italic",
+    textShadowColor: '#585858',
+    textShadowOffset: { width: 3, height: 3 },
+    textShadowRadius: 10,
   },
   forgotPassword: {
     color: "rgba(255, 255, 255, .7)",

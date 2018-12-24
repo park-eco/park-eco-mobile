@@ -16,9 +16,9 @@ import { getAttendant } from './../../actions/parkingLotAttendant'
 import { StackActions, NavigationActions } from 'react-navigation';
 
 import styles from "./style";
+const drawerImage = require("../../../assets/icon-Parking-Application.png");
+const drawerCover = require("../../../assets/background.png");
 
-const drawerCover = require("../../../assets/background-login1.jpg");
-const drawerImage = require("../../../assets/icon-Parking-Systems.jpg");
 const datas = [
   {
     name: "Live Tracking",
