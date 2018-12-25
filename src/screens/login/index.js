@@ -40,7 +40,7 @@ class Login extends Component {
 		return (
 			<Container style={styles.container}>
 				<Background source={background} />
-				<Banner source={logo} style={{ marginTop: 30 }} />
+				<Banner source={logo} style={{ marginTop: 10 }} />
 				<ServerInput style={{ marginTop: 15, marginBottom: 30, justifyContent: 'center', alignItems: 'center' }} />
 
 				<View style={{ alignItems: "center" }}>
@@ -57,7 +57,7 @@ class Login extends Component {
 						onPress={this.onPress}
 					/>
 				</View>
-				<ForgotPassword style={{ marginTop: 40 }} />
+				<ForgotPassword style={{ marginTop: 10 }} />
 			</Container>
 		);
 	}
