@@ -130,7 +130,7 @@ class SideBar extends Component {
               </ListItem>}
           />
 
-          <ListItem style={{ marginTop: 150 }}>
+          <ListItem style={{ marginTop: 90 }}>
             <Left>
               <Icon
                 active
